@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Tutorial Project
+This project is for practicing to dealing with web development.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
+(https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
