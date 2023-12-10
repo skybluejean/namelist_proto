@@ -3,6 +3,13 @@
 
 import React, { Component } from "react";
 import Information from './components/Information'
+import Table from '@material-ui/core/Table';
+import TableHead from '@material-ui/core/TableHead';
+import TableBody from '@material-ui/core/TableBody';
+import TableRow from '@material-ui/core/TableRow';
+import TableCell from "@material-ui/core/TableCell";
+import { withStyles } from "@material-ui/core/styles";
+import Paper from '@material-ui/core/Paper';
 
 // function App() {
 //   return (
@@ -26,6 +33,16 @@ import Information from './components/Information'
 // }
 // export default App;
 
+const styles = theme => ({
+  root : {
+    width : '100%',
+    marginTop : theme.spacing.unit * 3,
+    overflowX : 'auto'
+  },
+  table : {
+    minWidth : 1080
+  }
+})
 
 const informations = [
   {
@@ -56,9 +73,22 @@ const informations = [
 
 class App extends Component{
   render(){
+    const { classes } = this.props;
     return(
-      <div>
-        {
+      <Paper className={classes.root}>
+        <Table classnamw={ classes.table}>
+          <TableHead>
+            <TableRow>
+              <TableCell>Number</TableCell>
+              <TableCell>Thumnail</TableCell>
+              <TableCell>Name</TableCell>
+              <TableCell>Job</TableCell>
+              <TableCell>Phone</TableCell>
+              <TableCell>Email</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+          {
           informations.map(c => {
             return (
             <Information
@@ -73,7 +103,24 @@ class App extends Component{
             );
           })
         }
-      </div>
+        </TableBody>
+        </Table>
+        {/* {
+          informations.map(c => {
+            return (
+            <Information
+            key={c.id}
+            id={c.id}
+            image={c.image}
+            name={c.name}
+            job={c.job}
+            phone={c.phone}
+            email={c.email}
+            />
+            );
+          })
+        } */}
+      </Paper>
       // <div>
       // <Information
       // id={informations[0].id}
@@ -103,4 +150,4 @@ class App extends Component{
     );
   }  
 }
-export default App;
+export default withStyles(styles)(App);
