@@ -7,16 +7,44 @@
   padding: 40px;
 }
 
+.main-Container-CardList{
+  width: 30%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px gray;
+  margin: 0;
+  padding: 40px;
+}
+
+.main-Container-InputBox{
+  width: 40%;
+  height: 200%;
+  display: grid;
+  justify-content: center;
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px gray;
+  display: grid;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
+}
 
 .Input-Container{
   display: grid;
-  justify-content: center;
   align-items: center;
-  width: 30%;
-  height: 300px;
-  background-color: white;
+  width: 100%;
+  height: 400px;
+  background-color: violet;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 5px 1px gray; /* 그림자 효과*/
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -25,6 +53,7 @@
   text-align: center;
 }
 
-.placeHolder-Size{
-  margin: 0px;
+.file-Upload-Size{
+  position: relative;
+  left: 40px;
 }

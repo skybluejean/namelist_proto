@@ -3,7 +3,6 @@ import React from 'react';
 import './InputBox.css'
 
 const InputBox = () => {
-
   /*
   const [inputs, setInputs] = useState({
     name: "",
@@ -64,7 +63,7 @@ const InputBox = () => {
       <InputJob/>
       <InputPhone/>
       <InputEmail/>
-      {/* <button onClick={uploadSet}>Upload Card</button> */}
+      <ImageUpload/>
     </div>
   );
 };
@@ -105,6 +104,28 @@ const InputEmail = () =>{
       <b>이메일 : </b>
       {/* <input name="email" onChange={displayText} value={email} placeholder="이메일"/> */}
       <input placeholder="이메일"/>
+    </div>
+  )
+}
+
+const ImageUpload = ()=> {
+  /*
+  const [uploadImgUrl, setUploadImgUrl] = useState("");
+
+  const onchangeImageUpload = (e)=> {
+     const {files} = e.target;
+     const uploadFile = files[0];
+     const reader = new FileReader();
+     reader.readAsDataURL(uploadFile);
+     reader.onloadend = ()=> {
+     setUploadImgUrl(reader.result);
+  }
+}
+*/
+  return(
+    <div className='file-Upload-Size'>
+      <b>썸네일 : </b>
+      <input type = "file" accept = "image/*"/>
     </div>
   )
 }
