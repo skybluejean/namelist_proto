@@ -1,0 +1,30 @@
+.main-Container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
+}
+
+
+.Input-Container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px gray; /* 그림자 효과*/
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.placeHolder-Size{
+  margin: 0px;
+}

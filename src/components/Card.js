@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css'; // CSS 파일을 import 합니다.
+//import Image from './src/'
 
 /*
 const Card = () => {
@@ -115,7 +116,7 @@ class CardThumnail extends React.Component{
 const CardThumnail = () =>{
   return(
    <div>
-    <img src='' alt="thumnail"/>
+    <img className='thumnail-size' src={process.env.PUBLIC_URL + '/imagesFromNaver.jpg'}/>
   </div>
   )
 }
