@@ -1,6 +1,7 @@
 //import React, { useState } from "react";
 import React from 'react';
 import './InputBox.css'
+import './MainBoxContainer.css'
 
 const InputBox = () => {
   /*
@@ -33,9 +34,6 @@ const InputBox = () => {
  */
   
   /*
-  const uploadSet = (e) => {
-  
-  }
 
   return (
     <div>
@@ -58,12 +56,13 @@ const InputBox = () => {
   */
 
   return (
-    <div className="Input-Container">
+    <div className="input-Container">
       <InputName/>
       <InputJob/>
       <InputPhone/>
       <InputEmail/>
       <ImageUpload/>
+      <UploadCardButton/>
     </div>
   );
 };
@@ -126,6 +125,19 @@ const ImageUpload = ()=> {
     <div className='file-Upload-Size'>
       <b>썸네일 : </b>
       <input type = "file" accept = "image/*"/>
+    </div>
+  )
+}
+
+const UploadCardButton = () =>{
+
+  const uploadData = (e) => {
+  
+  }
+
+  return(
+    <div>
+      <button className='button-Size' onClick={uploadData}>Upoload Card</button>
     </div>
   )
 }

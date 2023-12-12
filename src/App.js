@@ -2,6 +2,8 @@ import React from 'react';
 import InputBox from "./components/InputBox.js";
 //import React, { Component } from "react";
 import Card from './components/Card.js';
+import RnDButtons from './components/ButtonForR&D.js';
+//import './MainBoxContainer.css'
 
 const App = () => {
   return (
@@ -11,6 +13,7 @@ const App = () => {
       </div>
       <div className='main-Container-InputBox'>
       <InputBox/>
+      <RnDButtons/>
       </div>
     </div>
   );

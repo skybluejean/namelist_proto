@@ -1,0 +1,36 @@
+.main-Container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 40px;
+}
+
+.main-Container-CardList{
+  width: 30%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: palevioletred;
+  border: 3px double lightslategrey;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px gray;
+  margin: 0;
+  padding: 40px;
+}
+
+.main-Container-InputBox{
+  width: 40%;
+  height: 300%;
+  display: grid;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: palevioletred;
+  border: 3px double lightslategrey;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px gray;
+  margin: 0;
+  padding: 40px;
+}

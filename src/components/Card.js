@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css'; // CSS 파일을 import 합니다.
-//import Image from './src/'
+import './MainBoxContainer.css'
 
 /*
 const Card = () => {
@@ -19,7 +19,7 @@ const Card = () => {
 
 const Card = () => {
   return (
-    <div className='card'>
+    <div className='card-Container'>
       <CardThumnail/>
       <CardInfoName/>
       <CardInfoJob/>
