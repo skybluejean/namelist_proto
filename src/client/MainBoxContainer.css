@@ -14,7 +14,7 @@
 }
 
 .main-Container-CardList{
-  width: 45%;
+  width: 500px;
   height: 100%;
   display: grid;
   justify-content: center;
@@ -24,13 +24,15 @@
   box-shadow: 0 0 5px 1px gray;
   margin: 0;
   padding: 40px;
-  max-height: 800px; /* 필요에 따라 높이 조절 */
+  position:relative;
+  right: 650px;
+  max-height:fit-content; /* 필요에 따라 높이 조절 */
   overflow-y: auto;
 }
 
 .main-Container-InputBox{
-  width: 40%;
-  height: 300%;
+  width: 500px;
+  height: 700px;
   display: grid;
   justify-content: center;
   flex-direction: row;
@@ -39,6 +41,8 @@
   border: 3px double lightslategrey;
   border-radius: 15px;
   box-shadow: 0 0 5px 1px gray;
-  margin: 0;
-  padding: 40px;
+  margin: 60px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
 }

@@ -2,21 +2,6 @@ import React from 'react';
 import './Card.css'; // CSS 파일을 import 합니다.
 import './MainBoxContainer.css'
 
-/*
-const Card = () => {
-  return (
-    <div className="card">
-      <div className="name">Jin</div>
-      <div className="job-title">Developer</div>
-      <div className="contact-info">
-        전화: 010-2627-7336<br />
-        이메일: herj@euclidspft.co.kr
-      </div>
-    </div>
-  );
-};
-*/
-
 const Card = () => {
   return (
     <div className='card-Container'>
@@ -28,33 +13,6 @@ const Card = () => {
     </div>
   );
 };
-
-/*
-class Card extends React.Component{
-  render(){
-    return(
-      <div>
-        <CardThumnail image={this.props.image}/>
-        <CardInfo name={this.name.props} job={this.job.props}/>
-        <CardContactInfo phone={this.props.phone} email={this.props.email}/>
-      </div>
-    );
-  }
-}
-*/
-
-/*
-class CardInfo extends React.Component{
-  render(){
-    return(
-      <div className='card'>
-        <h2 className='name'>{this.props.name}</h2>
-        <p className='job-title'>{this.props.job}</p>
-      </div>
-    )
-  }
-}
-*/
 
 const CardInfoName = () =>{
     return(
@@ -72,19 +30,6 @@ const CardInfoJob = () =>{
   )
 }
 
-/*
-class CardContactInfo extends React.Component{
-  render(){
-    return(
-      <div className='contact-info'>
-        <p>{this.props.phone}</p>
-        <p>{this.props.email}</p>
-      </div>
-    )
-  }
-}
-*/
-
 const CardContactPhone = () =>{
   return(
     <div className='contact-info'>
@@ -100,18 +45,6 @@ const CardContactEmail = () =>{
     </div>
   )
 }
-
-/*
-class CardThumnail extends React.Component{
-  render(){
-      return(
-        <div>
-          <img src={this.props.image} alt="thumnail"/>
-        </div>
-      )
-  }
-}
-*/
 
 const CardThumnail = () =>{
   return(
