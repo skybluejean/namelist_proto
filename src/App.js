@@ -240,7 +240,8 @@ const App = () => {
 
     return (
         <div className='main-Container'>
-          <h2 className='title-Design'>Name Card Board</h2>
+          <div className='main-Container-InputBox'>
+            <h2 className='title-Design'>Name Card Board</h2>
             {/* 사용자 정보 입력 폼 */}
               <form onSubmit={handleSubmit} className="input-Container">
                 <label>Name: </label>
@@ -251,31 +252,33 @@ const App = () => {
                 <input type="text" name="phone_number" onChange={handleChange} value={formData.phone_number} /><br />
                 <label>Email: </label>
                 <input type="text" name="email" onChange={handleChange} value={formData.email} /><br />
-                <label>Image Path: </label>
-                <input type="file" name="image_path" className='file-Upload-Size' onChange={handleChange} value={formData.image_path} /><br />
+                {/* <label>Image Path: </label>
+                <input type="file" name="image_path" className='file-Upload-Size' onChange={handleChange} value={formData.image_path} /><br /> */}
                 <button type="submit" className='button-Size-Input'>Upload</button>
               </form>
               <form className='RnD-Container'>
               <button type="revise" className='button-Size'>Revise</button>
               <button type="delete" className='button-Size'>Delete</button>
               </form>
+          </div>
 
             <hr />
 
             {/* 사용자 목록 출력 */}
+            <div className='main-Container-CardList'>
               {users.map(user => (
-                <div className='main-Container-CardList' key={user.id}>
+                <div key={user.id}>
                   <div className='card-Container'>
-                  <p>ID: {user.id}</p>
-                  <img src={user.image_path} className='thumnail-size' alt="thumnail"/>
+                  {/* <p>ID: {user.id}</p> */}
+                  {/* <img src={user.image_path} className='thumnail-size' alt="thumnail"/> */}
                   <p className='name'>{user.name}</p>
                   <p className='job-title'>Job Title: {user.job_title}</p>
                   <p className='contact-info'>Phone Number: {user.phone_number}</p>
                   <p className='contact-info'>Email: {user.email}</p>
                   </div>
-                  <hr />
                 </div>
             ))}
+              </div>
         </div>
     );
 };
