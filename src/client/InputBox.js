@@ -3,6 +3,17 @@ import React from 'react';
 import './InputBox.css'
 import './MainBoxContainer.css'
 
+
+import Axios from "axios";
+
+const submitTest = () => {
+    Axios.get("http://localhost:8000/", {}).then(() => {
+        alert("등록 완료!");
+    });
+};
+
+
+
 const InputBox = () => {
   /*
   const [inputs, setInputs] = useState({
@@ -137,7 +148,7 @@ const UploadCardButton = () =>{
 
   return(
     <div>
-      <button className='button-Size' onClick={uploadData}>Upoload Card</button>
+      <button className='button-Size' onClick={submitTest}>Upoload Card</button>
     </div>
   )
 }
