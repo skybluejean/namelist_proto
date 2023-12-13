@@ -1,8 +1,8 @@
 import React from 'react';
-import InputBox from "./components/InputBox.js";
+import InputBox from "./client/InputBox.js";
 //import React, { Component } from "react";
-import Card from './components/Card.js';
-import RnDButtons from './components/ButtonForR&D.js';
+import Card from './client/Card.js';
+import RnDButtons from './client/ButtonForR&D.js';
 //import './MainBoxContainer.css'
 
 const App = () => {
