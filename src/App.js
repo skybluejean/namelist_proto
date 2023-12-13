@@ -262,7 +262,7 @@ const App = () => {
               </form>
           </div>
 
-            <hr />
+          <hr/>
 
             {/* 사용자 목록 출력 */}
             <div className='main-Container-CardList'>

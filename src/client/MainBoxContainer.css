@@ -24,6 +24,8 @@
   box-shadow: 0 0 5px 1px gray;
   margin: 0;
   padding: 40px;
+  max-height: 800px; /* 필요에 따라 높이 조절 */
+  overflow-y: auto;
 }
 
 .main-Container-InputBox{
