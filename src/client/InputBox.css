@@ -21,9 +21,7 @@
   left: 40px;
 }
 
-.button-Size{
-  width: 100px;
+.button-Size-Input{
   height: 40px;
   border-radius: 15px;
-  text-align: center;
 }

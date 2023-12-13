@@ -1,7 +1,6 @@
 /* Card.css */
 .card-Container{
-  width: 70%;
-  height: 90%;
+  height: 80%;
   background-color: lightcoral;
   border: 3px double lightslategrey;
   border-radius: 5px;
