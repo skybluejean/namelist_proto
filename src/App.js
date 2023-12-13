@@ -108,6 +108,10 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './client/MainBoxContainer.css'
+import './client/InputBox.css';
+import './client/Card.css';
+import './client/ButtonForR&D.css';
 
 const App = () => {
     const [users, setUsers] = useState([]);
@@ -149,10 +153,10 @@ const App = () => {
     };
 
     return (
-        <div>
-            <h2>Name Card Board</h2>
+        <div className='main-Container'>
+          <h2 className='title-Design'>Name Card Board</h2>
             {/* 사용자 정보 입력 폼 */}
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} className="input-Container">
                 <label>Name: </label>
                 <input type="text" name="name" onChange={handleChange} value={formData.name} required /><br />
                 <label>Job Title: </label>
@@ -162,15 +166,19 @@ const App = () => {
                 <label>Email: </label>
                 <input type="text" name="email" onChange={handleChange} value={formData.email} /><br />
                 <label>Image Path: </label>
-                <input type="file" name="image_path" onChange={handleChange} value={formData.image_path} /><br />
-                <button type="submit">Submit</button>
+                <input type="file" name="image_path" className='file-Upload-Size' onChange={handleChange} value={formData.image_path} /><br />
+                <button type="submit" className='button-Size-Input'>Upload</button>
+              </form>
+              <form className='RnD-Container'>
+              <button type="revise" className='button-Size'>Revise</button>
+              <button type="delete" className='button-Size'>Delete</button>
               </form>
 
             <hr />
 
             {/* 사용자 목록 출력 */}
               {users.map(user => (
-                <div key={user.id}>
+                <div className='card-Container' key={user.id}>
                   <p>ID: {user.id}</p>
                   <p>Name: {user.name}</p>
                   <p>Job Title: {user.job_title}</p>

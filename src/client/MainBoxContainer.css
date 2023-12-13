@@ -1,10 +1,15 @@
 .main-Container{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  display: grid;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 40px;
+}
+
+.title-Design{
+  text-align: center;
+  background-color:darkorchid;
+  border-radius: 25px;
 }
 
 .main-Container-CardList{
