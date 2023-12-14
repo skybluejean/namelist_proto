@@ -7,10 +7,28 @@
   padding: 40px;
 }
 
-.title-Design{
+.title-Design-Input{
+  width: 450px;
+  height: 50px;
   text-align: center;
   background-color:darkorchid;
   border-radius: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.title-Design-View{
+  width: 550px;
+  height: 50px;
+  text-align: center;
+  background-color:darkorchid;
+  border-radius: 25px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
 }
 
 .main-Container-CardList{
@@ -33,9 +51,9 @@
 .main-Container-InputBox{
   width: 500px;
   height: 700px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
   background-color: palevioletred;
   border: 3px double lightslategrey;

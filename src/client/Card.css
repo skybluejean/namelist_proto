@@ -1,7 +1,7 @@
 /* Card.css */
 .card-Container{
-  width: 400px;
-  height: 180px;
+  width: 360px;
+  height: 160px;
   background-color: lightcoral;
   border: 3px double lightslategrey;
   border-radius: 5px;
@@ -12,6 +12,19 @@
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
+}
+
+.card-editButton-Container{
+  width: 500px;
+  height: 200px;
+  background-color: slateblue;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
 }
 
 .name {

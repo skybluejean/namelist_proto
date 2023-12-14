@@ -2,8 +2,8 @@
 .input-Container{
   display: grid;
   align-items: center;
-  width: 350px;
-  height: 450px;
+  width: 450px;
+  height: 600px;
   background-color: violet;
   border: 3px double lightslategrey;
   border-radius: 15px;
@@ -16,12 +16,33 @@
   text-align: center;
 }
 
+.label-Input-Container{
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+
+.input-Label-Design{
+  font-size: large;
+  font-style: oblique;
+  display: grid;
+  align-items: center;
+}
+
+.input-Size{
+  width: 200px;
+  height: 40px;
+}
+
 .file-Upload-Size{
   position: relative;
   left: 40px;
 }
 
 .button-Size-Input{
-  height: 40px;
+  width: 450px;
+  height: 50px;
   border-radius: 15px;
 }

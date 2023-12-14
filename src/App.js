@@ -131,38 +131,53 @@ const App = () => {
     return (
         <div className='main-Container'>
           <div className='main-Container-InputBox'>
-            <h2 className='title-Design'>Name Card Board</h2>
+            <h2 className='title-Design-Input'>Name Card Information Input</h2>
             {/* 사용자 정보 입력 폼 */}
               <form onSubmit={handleSubmit} className="input-Container">
-                <label>Name: </label>
-                <input type="text" name="name" onChange={handleChange} value={formData.name} required /><br />
-                <label>Job Title: </label>
-                <input type="text" name="job_title" onChange={handleChange} value={formData.job_title} /><br />
-                <label>Phone Number: </label>
-                <input type="text" name="phone_number" onChange={handleChange} value={formData.phone_number} /><br />
-                <label>Email: </label>
-                <input type="text" name="email" onChange={handleChange} value={formData.email} /><br />
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Name: </label>
+                <input type="text" className='input-Size' name="name" onChange={handleChange} value={formData.name} required /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Job Title: </label>
+                <input type="text" className='input-Size' name="job_title" onChange={handleChange} value={formData.job_title} /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Phone Number: </label>
+                <input type="text" className='input-Size' name="phone_number" onChange={handleChange} value={formData.phone_number} /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Email: </label>
+                <input type="text" className='input-Size' name="email" onChange={handleChange} value={formData.email} /><br />
+                </div>
                 {/* <label>Image Path: </label>
                 <input type="file" name="image_path" className='file-Upload-Size' onChange={handleChange} value={formData.image_path} /><br /> */}
                 <button type="submit" className='button-Size-Input'>Upload</button>
               </form>
-              <form className='RnD-Container'>
+              {/* <form className='RnD-Container'>
               <button type="revise" className='button-Size'>Revise</button>
               <button type="delete" className='button-Size'>Delete</button>
-              </form>
+              </form> */}
           </div>
 
             {/* 사용자 목록 출력 */}
             <div className='main-Container-CardList'>
+            <h2 className='title-Design-View'>Name Card List</h2>
               {users.map(user => (
                 <div key={user.id}>
-                  <div className='card-Container'>
-                  {/* <p>ID: {user.id}</p> */}
-                  {/* <img src={user.image_path} className='thumnail-size' alt="thumnail"/> */}
-                  <p className='name'>{user.name}</p>
-                  <p className='job-title'>Job Title: {user.job_title}</p>
-                  <p className='contact-info'>Phone Number: {user.phone_number}</p>
-                  <p className='contact-info'>Email: {user.email}</p>
+                  <div className='card-editButton-Container'>
+                    <div className='card-Container'>
+                      {/* <p>ID: {user.id}</p> */}
+                      {/* <img src={user.image_path} className='thumnail-size' alt="thumnail"/> */}
+                      <p className='name'>{user.name}</p>
+                      <p className='job-title'>Job Title: {user.job_title}</p>
+                      <p className='contact-info'>Phone Number: {user.phone_number}</p>
+                      <p className='contact-info'>Email: {user.email}</p>
+                    </div>
+                    <form className='RnD-Container'>
+                      <button type="revise" className='button-Size'>Revise</button>
+                      <button type="delete" className='button-Size'>Delete</button>
+                    </form>
                   </div>
                 </div>
             ))}
