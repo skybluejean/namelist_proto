@@ -86,23 +86,6 @@ db.connect(err => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/*
-// 사용자 정보 저장 API
-app.post('/', (req, res) => {
-    const { name, job_title, phone_number, email, image_path } = req.body;
-    const sql = `INSERT INTO users (name, job_title, phone_number, email, image_path) VALUES (?, ?, ?, ?, ?)`;
-
-    db.query(sql, [name, job_title, phone_number, email, image_path], (err, result) => {
-        if (err) {
-            console.error('Error executing query:', err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            res.status(200).send('User created successfully');
-        }
-    });
-});
-*/
-
 // 사용자 정보 저장 API
 app.post('/', (req, res) => {
   const { name, job_title, phone_number, email, image_path } = req.body;
@@ -118,23 +101,6 @@ app.post('/', (req, res) => {
   });
 });
 
-/*
-// 사용자 목록 조회 API
-app.get('/', (req, res) => {
-    const sql = `SELECT * FROM users`;
-
-    db.query(sql, (err, result) => {
-        if (err) {
-            console.error('Error executing query:', err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            //res.status(200).json(result);
-            res.send(result);
-        }
-    });
-});
-*/
-
 // 사용자 목록 조회 API
 app.get('/', (req, res) => {
   const sql = `SELECT * FROM users`;
@@ -148,6 +114,13 @@ app.get('/', (req, res) => {
       }
   });
 });
+
+/*
+app.get('/update/:id',(res,req)=>{
+    const sql = `SELECT * FROM users`;
+    
+});
+*/
 
 // 서버 시작
 app.listen(port, () => {
