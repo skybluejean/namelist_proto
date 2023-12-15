@@ -64,3 +64,19 @@
   position: fixed;
   top: 0;
 }
+.main-Container-InputBox{
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  border: 3px double lightslategrey;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 1px gray;
+  margin: 60px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+}

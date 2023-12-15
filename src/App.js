@@ -135,6 +135,7 @@ const App = () => {
             {/* 사용자 정보 입력 폼 */}
               <form onSubmit={handleSubmit} className="input-Container">
                 <div className='label-Input-Container'>
+<<<<<<< HEAD
                 <label className='input-Label-Design'>이름: </label>
                 <input type="text" className='input-Size' name="name" onChange={handleChange} value={formData.name} required /><br />
                 </div>
@@ -148,12 +149,31 @@ const App = () => {
                 </div>
                 <div className='label-Input-Container'>
                 <label className='input-Label-Design'>이메일: </label>
+=======
+                <label className='input-Label-Design'>Name: </label>
+                <input type="text" className='input-Size' name="name" onChange={handleChange} value={formData.name} required /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Job Title: </label>
+                <input type="text" className='input-Size' name="job_title" onChange={handleChange} value={formData.job_title} /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Phone Number: </label>
+                <input type="text" className='input-Size' name="phone_number" onChange={handleChange} value={formData.phone_number} /><br />
+                </div>
+                <div className='label-Input-Container'>
+                <label className='input-Label-Design'>Email: </label>
+>>>>>>> 9cda0e295ef4ca1e239539704600cc4023f0216b
                 <input type="text" className='input-Size' name="email" onChange={handleChange} value={formData.email} /><br />
                 </div>
                 {/* <label>Image Path: </label>
                 <input type="file" name="image_path" className='file-Upload-Size' onChange={handleChange} value={formData.image_path} /><br /> */}
+<<<<<<< HEAD
                 <button type="submit" className='button-Size-Input'>등록</button>
                 <button type="submit" className='button-Size-Input'>재등록</button>
+=======
+                <button type="submit" className='button-Size-Input'>Upload</button>
+>>>>>>> 9cda0e295ef4ca1e239539704600cc4023f0216b
               </form>
               {/* <form className='RnD-Container'>
               <button type="revise" className='button-Size'>Revise</button>
@@ -171,6 +191,7 @@ const App = () => {
                       {/* <p>ID: {user.id}</p> */}
                       {/* <img src={user.image_path} className='thumnail-size' alt="thumnail"/> */}
                       <p className='name'>{user.name}</p>
+<<<<<<< HEAD
                       <p className='job-title'>직업(직위): {user.job_title}</p>
                       <p className='contact-info'>핸드폰 번호: {user.phone_number}</p>
                       <p className='contact-info'>Email: {user.email}</p>
@@ -178,6 +199,15 @@ const App = () => {
                     <form className='RnD-Container'>
                       <button type="revise" className='button-Size'>수정</button>
                       <button type="delete" className='button-Size'>삭제</button>
+=======
+                      <p className='job-title'>Job Title: {user.job_title}</p>
+                      <p className='contact-info'>Phone Number: {user.phone_number}</p>
+                      <p className='contact-info'>Email: {user.email}</p>
+                    </div>
+                    <form className='RnD-Container'>
+                      <button type="revise" className='button-Size'>Revise</button>
+                      <button type="delete" className='button-Size'>Delete</button>
+>>>>>>> 9cda0e295ef4ca1e239539704600cc4023f0216b
                     </form>
                   </div>
                 </div>
